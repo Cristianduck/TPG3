@@ -1,0 +1,4 @@
+6;Inglaterra;2;Iran
+1;Estados Unidos;1;Gales
+1;Argentina;2;Arabia Saudita
+2;Brasil;0;Servia

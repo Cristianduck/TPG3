@@ -1,0 +1,16 @@
+Catar;2;Ecuador
+Senegal;0;Paises Bajos
+Inglaterra;1;Iran
+Estados Unidos;0;Gales
+Argentina;1;Arabia Saudita
+Mexico;2;Polonia
+Dinamarca;1;Tunez
+Francia;1;Australia
+Alemania;1;Japon
+España;1;Costa Rica
+Marruecos;2;Croacia
+Belgica;1;Canada
+Suiza;0;Camerun
+Brasil;1;Servia
+Uruguay;1;Corea del Sur
+Ghana;2;Portugal
