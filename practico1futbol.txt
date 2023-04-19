@@ -1,0 +1,190 @@
+abstract public class Persona {
+    String nombre;
+    String apellidos;
+    int edad;
+
+public Persona(String nombre, String apellidos, int edad) {
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.edad = edad;
+    
+    abstract public class Jugador extends Persona {
+     boolean esTitular;
+
+     Jugador(String nombre, String apellidos, int edad, boolean esTitular){
+    super(nombre, apellidos, edad);
+    esTitular = esTitular;
+
+    public class Técnico extends Persona {
+        int añosExperiencia; 
+        boolean esNacional;
+
+    public Técnico(String nombre, String apellidos, int edad, int añosExperiencia, boolean esNacional) {
+        super(nombre, apellidos, edad);
+        this.añosExperiencia = añosExperiencia;
+        this.esNacional = esNacional;
+
+    public String toString() {
+            return “Nombre = “ + nombre + “, apellidos = “ + apellidos + “,
+            Edad = “ + edad + “ añosExperiencia = ” + añosExperiencia;
+
+    public class Portero extends Jugador {
+                    int golesRecibidos; 
+
+    public Portero(String nombre, String apellidos, int edad, boolean
+            esTitular, int golesRecibidos) {
+            super(nombre, apellidos, edad, esTitular); /* Invoca al constructor
+            de la clase padre */
+            this.golesRecibidos = golesRecibidos;
+            }
+                   
+    public String toString() {
+            return “Nombre = “ + nombre + “, Apellidos = “ + apellidos + “,
+            Edad = “ + edad + “, Goles recibidos = “ + golesRecibidos;
+
+    public class Defensa extends Jugador {
+                       
+    public Defensa(String nombre, String apellidos, int edad , boolean
+            esTitular) {
+            super(nombre, apellidos, edad, esTitular); 
+            }
+                        
+    public String toString() {
+            return “Nombre = “ + nombre + “, Apellidos = “ + apellidos + “,
+            Edad = “ + edad;
+
+    public class Mediocampo extends Jugador {
+                           
+            int númeroAsistencias;
+
+    public Mediocampo(String nombre, String apellidos, int edad,
+            boolean esTitular, int númeroAsistencias) {
+            super(nombre, apellidos, edad, esTitular); 
+            this.númeroAsistencias = númeroAsistencias;
+            }
+
+    public String toString() {
+            return “Nombre = “ + nombre + “, Apellidos = “ + apellidos + “,
+            Edad = “ + edad + “, Asistencias = “ + númeroAsistencias;
+
+    public class Delantero extends Jugador {
+            int golesAnotados; 
+    public Delantero(String nombre, String apellidos,int edad,boolean
+            esTitular, int golesAnotados) {
+            super(nombre, apellidos, edad, esTitular); 
+            this.golesAnotados = golesAnotados;
+            } 
+
+    public String toString() {
+            return “Nombre = “ + nombre + “, Apellidos = “ + apellidos + “,
+            Edad = “ + edad + “, Goles anotados = “ + golesAnotados;
+
+    public class EquipoFútbol {
+            String nombre; 
+            String país;
+            Técnico técnico; 
+            Mediocampo[] mediocampos;
+            Delantero[] delanteros; 
+    public EquipoFútbol(String nombre, String país) {
+            this.nombre = nombre;
+            this.país = país;
+
+    public EquipoFútbol(String nombre, String ciudad, Técnico técnico,
+            Portero portero, Defensa[] defensas, Mediocampo[] mediocampos,
+            Delantero[] delanteros) {
+            this(nombre, ciudad);
+            this.técnico = técnico;
+            this.portero = portero;
+            this.defensas = defensas;
+            this.mediocampos = mediocampos;
+            this.delanteros = delanteros;
+
+    void imprimir() {
+           System.out.println(“Nombre del equipo = “ + nombre);
+           System.out.println(“País = “ + país);
+           System.out.println(“Portero [“ + portero + “]”);
+           System.out.println(“Defensas”);
+           for (int i = 0; i < defensas.length; i++) { 
+           
+
+           System.out.println(defensas[i]);
+    }
+    System.out.println(“Medicampo”);
+    for (int j = 0; j < mediocampos.length; j++) { 
+    
+    System.out.println(mediocampos[j]);
+    }
+    System.out.println(“Delanteros”);
+    for (int k = 0; k < delanteros.length; k++) { 
+    System.out.println(delanteros[k]);
+
+     }
+    }
+   }
+   }
+   }
+     }
+  }
+    }
+ }
+}
+}
+                        }
+                    }
+            }
+        }
+       }
+     }
+
+   }
+       
+ }
+
+}
+
+
+import java.util.ArrayList;
+import java.util.arraylist;
+import java.Scanner;
+
+public class prueba {
+
+    public static void main(String[] args) {
+         //Scanner sc = new Scanner (System.in);
+         List<Integer> Listajugadores = new ArrayList<Integer>();
+        
+
+        Técnico técnico = new Técnico(“Carlos”,”Queiroz”, 66, 30, false);
+        
+        Portero portero = new Portero(“David”, “Ospina”, 30, true, 10);
+        
+        Defensa[] defensas = new Defensa[4]; 
+       
+        Mediocampo[] mediocampos = new Mediocampo[4]; 
+       
+        Delantero[] delanteros = new Delantero[2]; 
+       
+        defensas[0] = new Defensa(“Yerry”, “Mina”, 24, true);
+        defensas[1] = new Defensa(“Davison”, “Sánchez”, 23, true);
+        defensas[2] = new Defensa(“William”, “Tesillo”, 29, true);
+        defensas[3] = new Defensa(“Stefan”, “Medina”, 29, true);
+        mediocampos[0] = new Mediocampo(“Mateus”, “Uribe”, 28, true,
+        12);
+        mediocampos[1] = new Mediocampo(“Wilmar”, “Barrios”, 25,
+        true, 12);
+        mediocampos[2] = new Mediocampo(“Juan Guillermo”,
+        “Cuadrado”, 31, true, 10);
+        mediocampos[3] = new Mediocampo(“James”, “Rodríguez”, 28,
+        true, 32);
+        delanteros[0] = new Delantero(“Radamel Falcao”, “García”, 33,
+        true, 15);
+        delanteros[1] = new Delantero(“Duvan”, “Zapata”, 28, true, 12);
+        /* Crea el equipo pasando como parámetros cada jugador creado
+        anteriormente */
+        EquipoFútbol equipo = new EquipoFútbol(“Selección mayores”,
+        “Colombia”,
+        técnico, portero, defensas, mediocampos, delanteros);
+        equipo.imprimir(); // Muestra los datos del equipo de fútbol
+        }
+    
+}

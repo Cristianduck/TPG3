@@ -1,0 +1,24 @@
+argentina 2; venezuela 1;
+brasil 3; bolivia 2;
+peru 1; chile 1;
+argentina 1; peru 1;
+chile 3; brasil 1;
+bolivia 4; venezuela 1;
+brasil 2; argentina 2;
+venezuela 3; brasil 2;
+
+--
+argentina 2; venezuela 1;
+brasil 3; bolivia 2;
+peru 1; chile 1;
+argentina 1; peru 1;
+
+--
+
+
+ peru 1; chile 1;
+argentina 1; peru 1;
+
+
+
+argentina 1; peru 1;
